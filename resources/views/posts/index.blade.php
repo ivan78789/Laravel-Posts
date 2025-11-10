@@ -29,7 +29,7 @@
             </a>
             <br>
             <a href="{{ route('posts.show', $post) }}" class="text-blue-700">
-                Описание: {{ $post->content }}
+                Описание: {{ Str::limit($post->content, 10) }}
             </a>
             <br>
 

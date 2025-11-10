@@ -15,13 +15,14 @@
                 </a>
             </div>
 
-            <h3 class="text-3xl font-bold text-gray-900 dark:text-gray-100">
-                Название поста: {{ $post->title }}
-            </h3>
+<h3 class="text-3xl max-w-auto font-bold text-gray-900 dark:text-gray-100 break-words">
+    Название поста: {{ $post->title }}
+</h3>
 
-            <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-                Описание: {{ $post->content }}
-            </p>
+<p class="text-gray-700 max-w-auto dark:text-gray-300 text-lg leading-relaxed break-words">
+    Описание: 
+    {{ $post->content }}
+</p>
 
             <!-- Действия автора -->
 @if(Auth::id() === $post->user_id)
