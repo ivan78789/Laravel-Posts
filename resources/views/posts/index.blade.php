@@ -31,8 +31,8 @@
             <a href="{{ route('posts.show', $post) }}" class="text-blue-700">
                 Описание: {{ Str::limit($post->content, 10) }}
             </a>
-            <br>
 
+            <br>
             | <a href="{{ route('posts.show', $post) }}" class="text-yellow-700">Просмотреть</a>
 
             <!-- Кнопки редактирования и удаления только автору -->
